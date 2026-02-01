@@ -1,0 +1,45 @@
+source,target,weight,reason
+Sub_A,Hospital_1,0.9,Primary power supply
+Sub_A,Telecom_T1,0.8,Power to telecom
+Sub_A,Traffic_Z1,0.6,Traffic signal power
+Sub_A,Zone_A,0.75,Residential electricity
+Sub_A,Zone_B,0.7,Residential electricity
+
+Sub_B,Hospital_2,0.9,Primary power supply
+Sub_B,Hospital_3,0.85,Primary power supply
+Sub_B,Telecom_T2,0.8,Power to telecom
+Sub_B,Traffic_Z2,0.6,Traffic signal power
+Sub_B,Zone_C,0.7,Residential electricity
+Sub_B,Zone_D,0.75,Residential electricity
+
+Sub_C,Hospital_4,0.9,Primary power supply
+Sub_C,Hospital_5,0.85,Primary power supply
+Sub_C,Telecom_T3,0.8,Power to telecom
+Sub_C,Traffic_Z3,0.6,Traffic signal power
+Sub_C,Zone_E,0.7,Residential electricity
+Sub_C,Zone_F,0.75,Residential electricity
+
+Sub_D,Hospital_6,0.9,Primary power supply
+Sub_D,Hospital_7,0.85,Primary power supply
+Sub_D,Telecom_T4,0.8,Power to telecom
+Sub_D,Traffic_Z4,0.6,Traffic signal power
+Sub_D,Zone_G,0.75,Residential electricity
+Sub_D,Zone_H,0.7,Residential electricity
+
+Sub_E,Hospital_8,0.9,Primary power supply
+Sub_E,Telecom_T5,0.8,Power to telecom
+Sub_E,Traffic_Z5,0.6,Traffic signal power
+Sub_E,Zone_I,0.7,Residential electricity
+Sub_E,Zone_J,0.75,Residential electricity
+
+Telecom_T1,Hospital_1,0.5,Communication dependency
+Telecom_T2,Hospital_2,0.5,Communication dependency
+Telecom_T3,Hospital_4,0.5,Communication dependency
+Telecom_T4,Hospital_6,0.5,Communication dependency
+Telecom_T5,Hospital_8,0.5,Communication dependency
+
+Traffic_Z1,Zone_A,0.4,Traffic congestion impact
+Traffic_Z2,Zone_C,0.4,Traffic congestion impact
+Traffic_Z3,Zone_E,0.4,Traffic congestion impact
+Traffic_Z4,Zone_G,0.4,Traffic congestion impact
+Traffic_Z5,Zone_I,0.4,Traffic congestion impact
