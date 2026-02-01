@@ -1,4 +1,4 @@
-from graph_model import build_city_graph
+from backend.graph_model import build_city_graph
 
 def compute_severity(simulation_events):
     G = build_city_graph()
