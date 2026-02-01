@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
-from graph_model import build_city_graph
+from backend.graph_model import build_city_graph
 from simulation import simulate_outage
 from severity import compute_severity
 from priority import compute_restoration_priority
