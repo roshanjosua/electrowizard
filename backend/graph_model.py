@@ -2,7 +2,8 @@ import pandas as pd
 import networkx as nx
 import os
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
 def build_city_graph():
     nodes_path = os.path.join(DATA_DIR, "infrastructure_nodes.csv")
@@ -13,7 +14,6 @@ def build_city_graph():
 
     G = nx.DiGraph()
 
-    # Add nodes
     for _, row in nodes_df.iterrows():
         G.add_node(
             row["node_id"],
@@ -23,10 +23,8 @@ def build_city_graph():
             population=0 if pd.isna(row["population"]) else int(row["population"]),
             latitude=float(row["latitude"]),
             longitude=float(row["longitude"]),
-            status="active"
         )
 
-    # Add edges
     for _, row in edges_df.iterrows():
         G.add_edge(
             row["source"],
