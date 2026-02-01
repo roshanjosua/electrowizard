@@ -16,7 +16,7 @@ async function runAnalysis() {
     const hours = document.getElementById("hours").value;
 
     const response = await fetch(
-        `http://127.0.0.1:5000/analyze?start_node=${startNode}&hours=${hours}`
+        `/analyze?start_node=${startNode}&hours=${hours}`
     );
 
     const data = await response.json();
