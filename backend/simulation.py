@@ -1,4 +1,4 @@
-from graph_model import build_city_graph
+from backend.graph_model import build_city_graph
 
 def trace_dependency_path(G, start, end):
     """
